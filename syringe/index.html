@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 1200px;
+      height: 500px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .syringe {
+      width: 650px;
+      height: 80px;
+      background: linear-gradient(0deg, white 0%, rgb(219, 219, 219) 50%, white 100%);
+      border: 1px solid #aaa;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .syringe::before {
+      content: '';
+      width: 50px;
+      height: 130px;
+      background: linear-gradient(0deg, white 0%, rgb(219, 219, 219) 50%, white 100%);
+      border: 1px solid #aaa;
+      border-radius: 10px;
+      position: absolute;
+      top: 40px;
+      transform: translate(-50%, -50%);
+    }
+
+    .syringe::after {
+      content: '';
+      width: 100px;
+      height: 1px;
+      background: black;
+      position: absolute;
+      top: 50%;
+      right: -150px;
+      transform: translate(-50%, -50%);
+    }
+
+    .syringe-body-2 {
+      width: 50px;
+      height: 132px;
+      background: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .syringe-body-1 {
+      width: 250px;
+      height: 130px;
+      background: linear-gradient(0deg, white 0%, rgb(219, 219, 219) 50%, white 100%);
+      border: 1px solid #aaa;
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+    }
+
+    .syringe-body-1::after {
+      content: 'Made in Taiwan';
+      font-family: '微軟正黑體';
+      color: #aaa;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .syringe-body-3 {
+      width: 250px;
+      height: 130px;
+      background: linear-gradient(0deg, #ffa 0%, rgb(209, 209, 147) 50%, #ffa 100%);
+      border: 1px solid #aaa;
+      position: absolute;
+      top: 50%;
+      right: -12%;
+      transform: translate(-50%, -50%);
+    }
+
+    .line {
+      width: 10px;
+      height: 15px;
+      border-right: 1px solid #aaa;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="syringe">
+      <div class="syringe-body-1">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="syringe-body-2"></div>
+      <div class="syringe-body-3">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
